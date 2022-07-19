@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.leandjb'
+version '0.0.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.vintage:junit-vintage-engine:5.7.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+
+    implementation 'io.github.bonigarcia:webdrivermanager:5.1.1'
+    implementation 'org.apache.pdfbox:pdfbox:2.0.26'
+
+    implementation 'org.seleniumhq.selenium:selenium-java:4.1.2'
+    implementation 'io.cucumber:cucumber-core:7.2.2'
+    implementation 'io.cucumber:cucumber-java:7.2.2'
+    implementation 'io.cucumber:cucumber-junit:7.2.2'
+}
+
+test {
+    useJUnitPlatform()
+}
